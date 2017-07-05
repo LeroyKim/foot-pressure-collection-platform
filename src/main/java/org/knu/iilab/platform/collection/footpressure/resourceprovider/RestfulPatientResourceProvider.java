@@ -23,7 +23,7 @@ public class RestfulPatientResourceProvider implements IResourceProvider{
         // Search patient with theId
 
         patient.addIdentifier();
-        patient.getIdentifier().get(0).setSystem("http://hl7.org/fhir/sid/kr-rrn"); // temp system uri for Korea Resident Registration Number
+        patient.getIdentifier().get(0).setSystem("http://hl7.org/fhir/sid/kr-rrn"); // false system uri for Korea Resident Registration Number
         patient.getIdentifier().get(0).setValue("920731-1111111");
         patient.addName().setFamily("Kim").addGiven("Leroy");
         patient.setGender(Enumerations.AdministrativeGender.MALE);
